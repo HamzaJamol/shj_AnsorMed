@@ -3,10 +3,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family:  "Open-Sans", "Arial" , sans-serif;
+  font-family:  "Open Sans", "Arial" , sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #444;
@@ -169,6 +173,18 @@ body {
   opacity: 1;
 }
 
+.main-link-outline {
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+.main-link-outline:hover {
+  border-color: transparent;
+  background-color: #de2e54;
+  color: #fff;
+}
+
 /* HERO */
 .hero {
   border-color: transparent;
@@ -209,52 +225,92 @@ body {
 }
 
 
-/* PROMO */
-.promo {
-  flex-direction: column;
-}
-.promo-heading {
-}
 
-.site-promo-heading {
-  margin: auto;
-}
-
-.promo-content {
-}
-
-.promo-inner {
+/* INDEX-SERVICES */
+.index-service {
   display: flex;
-}
-
-.promo-inner h3 p {
-  flex-direction: column;
-}
-
-.promo-texts {
-  margin-left: 64px ;
   align-items: center;
-  flex-direction: column;
 }
 
-.promo-img {
+.index-service-img {
   width: 200px;
   height: 200px;
+  margin-right: 64px;
+  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: 0px 12px 24px -8px rgba(0, 187, 116, 0.3);
 }
 
-.main-link-footer {
-  margin: auto;
-  list-style: sans-serif, serif;
+.index-service-heading {
+  margin-top: 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  font-size: 36px;
+  line-height: 1.2;
+  font-family: "Open Sans Condensed", "Open Sans", "Arial" sans-serif;
+  color: #000;
+  text-align: center;
+}
+
+.index-service-list {
+  width: 864px;
+  padding: 0;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
+  list-style: none;
+}
+.index-service-item:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.index-service-content {
+  width: 600px;
+}
+
+.index-service-title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #222;
+}
+
+.index-service-description {
+  margin: 0;
+}
+
+.index-service-actions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+
+
+/* CTA */
+.cta {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #0eb4c1;
+  color: #fff;
+}
+
+.cta-heading {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 1.2;
+  font-family: "open sans condensed", "Open Sans" "Arial", sans-serif;
+  text-align: center;
+}
+
+.cta-links {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
-  color: #fff;
-  background-color: #DE2E54;
-  width: 189px;
-  height: 47px;
-  list-style: none;
-  text-decoration: none;
+}
+
+.cta-links-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 /* SITE-FOOTER */
