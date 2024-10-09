@@ -267,6 +267,7 @@ body {
 }
 
 .index-service-content {
+  flex-grow: 1;
   width: 600px;
 }
 
@@ -316,48 +317,48 @@ body {
 
 /* SITE-FOOTER */
 /* .footer-top {
-  background-color: rgba(14, 180, 193, 1);
-  color: #fff;
+background-color: rgba(14, 180, 193, 1);
+color: #fff;
 }
 
 .footer-top-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
 }
 
 .footer-top-links {
-  display: flex;
-  justify-content: space-between;
+display: flex;
+justify-content: space-between;
 }
 
 .footer-top-links a {
-  text-decoration: none;
-  font-style: none;
-  font-style: none;
+text-decoration: none;
+font-style: none;
+font-style: none;
 }
 
 .footer-main-link-li {
-  border: 1.5px solid #fff ;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  color: #fff;
-  width: 189px;
-  height: 47px;
-  list-style: none;
-  text-decoration: none;
-  margin: auto ;
+border: 1.5px solid #fff ;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 8px;
+color: #fff;
+width: 189px;
+height: 47px;
+list-style: none;
+text-decoration: none;
+margin: auto ;
 }
 
 .footer-main-link-li:last-child {
-  margin-left: 40px;
+margin-left: 40px;
 }
 
 .footer-main-link-a {
-  color: #fff;
+color: #fff;
 } */
 
 /* SITER-FOOTER */
@@ -395,6 +396,18 @@ body {
   margin-right: 0;
 }
 
+.hero-img {
+  width: 40%;
+  height: auto;
+}
+
+.index-services-list {
+  width: 100%;
+}
+
+.index-service-img {
+  margin-right: 32px;
+}
 
 @media only screen and (max-width: 100px) {
   .hero-container {
@@ -419,8 +432,46 @@ body {
   }
 }
 
+@media only screen and (max-width: 700px) {
+  .index-services-heading {
+    font-size: 24px;
+    margin-bottom: 44px;
+  }
+
+  .index-service {
+    align-items: flex-start;
+  }
+
+  .index-service-img {
+    font-size: 24px;
+    margin-bottom: 44px;
+  }
+}
+
 @media only screen and (max-width: 550px) {
   .hero-img {
     width: 75%;
+  }
+
+  .index-service {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .index-service-content {
+    width: 100%;
+  }
+
+  .index-service-img {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .index-service-title {
+    text-align: center;
+  }
+
+  .index-service-description {
+    text-align: justify;
   }
 }
